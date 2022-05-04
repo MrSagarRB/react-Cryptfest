@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Dashboard from "./tabs/Dashboard";
+import RightSideContainer from './../components/RightSideContainer';
 
 function HomePage() {
   const [activeTab, setActiveTab] = useState("Dashboard");
@@ -38,7 +39,7 @@ function HomePage() {
 
         <div> {getCorrecrPage(activeTab)}</div>
 
-        <div>right side container</div>
+        <div><RightSideContainer /></div>
       </div>
     </div>
   );
