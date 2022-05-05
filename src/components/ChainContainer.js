@@ -1,20 +1,29 @@
 import React from "react";
+import { Progress } from "@nextui-org/react";
 
-function ChainContainer() {
+function ChainContainer(props) {
+  console.log(props);
   return (
-    <div>
-      <div className="flex-center">
+    <div className="my-5">
+      <div className="flex-center ">
         {" "}
-        <div className="flex gap-2" >
+        <div className="flex gap-2 items-center text-[16px]">
           {" "}
-          <img src="./coins/bitcoin.png" /> <p>Bitcoin </p>{" "}
+          <img
+            src={`./coins/${props.icon}`}
+            height={32}
+            width={32}
+            alt={props.icon}
+          />{" "}
+          <p>{props.title} </p>{" "}
         </div>{" "}
-        <p> $ 23,B</p>{" "}
+        <p> $ {props.value}</p>{" "}
       </div>
 
-      <div>
-         <p>71% </p>  
-           </div>
+      <div className="flex-center gap-2 mt-2 ">
+        <Progress value={props.progress} color={props.color} size="sm" />
+        <p>{props.progress}%</p>
+      </div>
     </div>
   );
 }

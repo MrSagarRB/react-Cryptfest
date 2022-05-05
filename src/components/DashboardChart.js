@@ -60,7 +60,7 @@ function DashboardChart() {
   console.log(durationActive);
 
   return (
-    <div className="  w-[773px]  p-5 bg-slate-900 rounded-[13px] font-inter ">
+    <div className="  w-[800px]  p-5 glass-bg1 rounded-[13px] font-inter h-[600px]">
       <div className="flex-center">
         {cardData.map((item) => {
           return (
@@ -108,11 +108,9 @@ function DashboardChart() {
           </div>
         </div>
       </div>
-     <div className="w-[695px] h-[301px] test ml-auto mr-auto mt-5"> 
-        Stock Chart 
-     </div>
-
-
+      <div className="w-[695px] h-[301px]  ml-auto mr-auto mt-5">
+        Stock Chart
+      </div>
     </div>
   );
 }
