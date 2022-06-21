@@ -19,7 +19,7 @@ const tableData = [
 
 function Token() {
   return (
-    <div className="test w-[800px] h-[230px] glass-bg1 p-5 mr-24">
+    <div className=" w-full h-[230px] glass-bg1 p-5 mr-24">
       <p className="text-[20px]">Tokens</p>
       <div>
         <table className="w-full">

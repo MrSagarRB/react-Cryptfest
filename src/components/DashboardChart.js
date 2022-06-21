@@ -5,6 +5,7 @@ import { MdOutlineInsertChartOutlined } from "react-icons/md";
 import { RiStockLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 import CountUp from "react-countup";
+import StockChart from "./StockChart";
 
 const cardData = [
   {
@@ -109,7 +110,7 @@ function DashboardChart() {
         </div>
       </div>
       <div className="w-[695px] h-[301px]  ml-auto mr-auto mt-5">
-        Stock Chart
+      <StockChart />
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
-import React from 'react'
-import DashboardChart from '../../components/DashboardChart'
+import React from "react";
+import DashboardChart from "../../components/DashboardChart";
 
 function Dashboard() {
   return (
     <div>
       <DashboardChart />
-       </div>
-  )
+    </div>
+  );
 }
 
-export default Dashboard
+export default Dashboard;

@@ -4,6 +4,7 @@ import Sidebar from "../components/Sidebar";
 import Dashboard from "./tabs/Dashboard";
 import RightSideContainer from "./../components/RightSideContainer";
 import Token from "../components/Token";
+import Trade from "./tabs/Trade";
 
 function HomePage() {
   const [activeTab, setActiveTab] = useState("Dashboard");
@@ -13,7 +14,7 @@ function HomePage() {
       case "Dashboard":
         return <Dashboard />;
       case "Trade":
-        return <h1 className="text-9xl">Trade</h1>;
+        return <Trade/>;
       case "Deposits":
         return <h1 className="text-9xl">Deposits</h1>;
       case "Protocols":
@@ -26,25 +27,27 @@ function HomePage() {
   };
 
   return (
-    <div className="primary-bg ">
+    <div className="primary-bg  ">
       <div className="py-5 px-10">
         <Header />
       </div>
 
-      <div section="body" className="flex justify-between px-10 pt-5 ">
+      <div section="body" className="flex justify-between px-10 pt-5  ">
         <div>
           <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
 
-        <div> {getCorrecrPage(activeTab)}</div>
+        <div className=" w-full px-[10px]"> {getCorrecrPage(activeTab)}
+     
+        </div>
 
         <div>
           <RightSideContainer />
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      {/* <div className="flex items-center justify-center">
         <Token />{" "}
-      </div>
+      </div> */}
     </div>
   );
 }

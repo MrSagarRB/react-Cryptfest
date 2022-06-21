@@ -26,14 +26,14 @@ function Header() {
       </div>
 
       <div className="flex-center">
-        <div className="flex items-center dark-bg h-[48px] w-[281px] rounded-[16px] justify-between">
+        <div className="flex px-3 items-center dark-bg h-[48px] w-[281px] rounded-[16px] justify-between">
           <RiSearch2Line fontSize={24} />
           <input
             className="font-inter font-[500] text-[18px] bg-transparent outline-none text-white "
             placeholder="Search"
           />
         </div>
-        <BiBell fontSize={24} />
+        <BiBell fontSize={24} className="mx-5"/>
       </div>
 
       <div className="flex-center ">
